@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   
   
+  <meta name="description" content="解释程序现将源程序转换为一颗树然后遍历树来执行解释比编译要慢编译分为分析（程序结构、语义等的分析）和综合阶段（代码优化和生成并最后构造出要求的目标程序）以及符号表的管理和错误诊断和处理。中间代码 易于产生也易于翻译 代码优化是在中间代码上进行的词法分析器与语法分析器的关系:   1.词法分析器为独立">
+  
 
   
   
@@ -11,15 +13,19 @@
   
   
   
-  <title>Hexo</title>
+  <title>lesson1 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="解释程序现将源程序转换为一颗树然后遍历树来执行解释比编译要慢编译分为分析（程序结构、语义等的分析）和综合阶段（代码优化和生成并最后构造出要求的目标程序）以及符号表的管理和错误诊断和处理。中间代码 易于产生也易于翻译 代码优化是在中间代码上进行的词法分析器与语法分析器的关系:   1.词法分析器为独立的一遍   2.他说语法分析器的子程序   3.他们两作为协同程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="lesson1">
+<meta property="og:url" content="http://yoursite.com/2019/09/12/lesson1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="解释程序现将源程序转换为一颗树然后遍历树来执行解释比编译要慢编译分为分析（程序结构、语义等的分析）和综合阶段（代码优化和生成并最后构造出要求的目标程序）以及符号表的管理和错误诊断和处理。中间代码 易于产生也易于翻译 代码优化是在中间代码上进行的词法分析器与语法分析器的关系:   1.词法分析器为独立的一遍   2.他说语法分析器的子程序   3.他们两作为协同程序">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-12T07:17:45.110Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="lesson1">
+<meta name="twitter:description" content="解释程序现将源程序转换为一颗树然后遍历树来执行解释比编译要慢编译分为分析（程序结构、语义等的分析）和综合阶段（代码优化和生成并最后构造出要求的目标程序）以及符号表的管理和错误诊断和处理。中间代码 易于产生也易于翻译 代码优化是在中间代码上进行的词法分析器与语法分析器的关系:   1.词法分析器为独立的一遍   2.他说语法分析器的子程序   3.他们两作为协同程序">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -60,17 +66,15 @@
 </header>
 
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
-  
-    <article id="post-lesson1" class="post-lesson1 post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-lesson1" class="post-lesson1 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
         
         
   
-    <h1 class="entry-title">
-      <a class="article-title" href="/2019/09/12/lesson1/">lesson1</a>
+    <h1 class="entry-title article-title">
+      lesson1
     </h1>
   
 
@@ -100,67 +104,20 @@
 </article>
 
 
-
-
-
-
-  
-    <article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2019/09/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/09/11/hello-world/" data-id="ck0gd9g3n0000twuzt7ck96lb" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2019/09/11/hello-world/">
-    <time datetime="2019-09-11T08:09:34.549Z" class="entry-date">
-        2019-09-11
-    </time>
-</a>
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
     
     
-    </footer>
-</article>
+        <span class="nav-next"><a href="/2019/09/11/hello-world/" rel="next">Hello World <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
 
 
 
 
 
 
-  
-  
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
