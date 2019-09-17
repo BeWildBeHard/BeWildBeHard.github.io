@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="伍一的学习博客">
 <meta property="og:description" content="2019.09.17分析：强调的是对问题的需求和调查研究。设计：强调的是概念上的解决方案而不是其实现。面向对象分析(object-oriented analysis) 强电的是在问题领域发现和描述对象。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-17T05:51:01.972Z">
+<meta property="og:updated_time" content="2019-09-17T07:21:19.282Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象分析和设计">
 <meta name="twitter:description" content="2019.09.17分析：强调的是对问题的需求和调查研究。设计：强调的是概念上的解决方案而不是其实现。面向对象分析(object-oriented analysis) 强电的是在问题领域发现和描述对象。">
@@ -98,11 +98,10 @@
         <p>2019.09.17<br>分析：强调的是对问题的需求和调查研究。<br>设计：强调的是概念上的解决方案而不是其实现。<br>面向对象分析(object-oriented analysis) 强电的是在问题领域发现和描述对象。</p>
 <a id="more"></a>
 <p>面向对象设计(object-oriented design) 强调的是定义软件对象以及他们如何写作以实现需求。<br><strong>定义用例</strong><br>   一些情景可以被编写成<strong><em>用例(use case)</em></strong>。<br><strong>定义领域模型</strong><br>   OOA的结果可以表示为领域模型 里面展示重要的领域概念或对象 像是对象之间的关系。<br><strong>定义交互图</strong><br>   对象之间的消息流。<br><strong>定义设计类图</strong></p>
-<h2 id="类的属性和方法。"><a href="#类的属性和方法。" class="headerlink" title="   类的属性和方法。"></a>   类的属性和方法。</h2><p>#什么是UML？</p>
+<h2 id="类的属性和方法。"><a href="#类的属性和方法。" class="headerlink" title="   类的属性和方法。"></a>   类的属性和方法。</h2><p><strong>什么是UML？</strong></p>
 <blockquote>
-<p>统一建模语言(UML)是描述、构造和文档化系统制品的可视化语言。<br>   关键点是可视化，它是图形化表示法的事实标准，用来绘制和展示与软件相关的图形。</p>
+<p>统一建模语言(UML)是描述、构造和文档化系统制品的可视化语言。<br>   关键点是可视化，它是图形化表示法的事实标准，用来绘制和展示与软件相关的图形。<br><strong>应用UML的三种方式</strong><br>   1.作为草图(sketch) 非正式不完整 探讨复杂问题。<br>   2.作为蓝图(blueprint) 详细的设计图 一般情况下，使用一些代码生成工具使用图来生成一些代码然后开发者手动编写填充其他代码。<br>   3.作为编程语言(programming language) 用UML完成软件系统可执行规格说明。可执行代码能够被自动生成但是不相同处一样能够被开发者看到或是修改：人们警用UML进行工作。这样使用UML需要将所有行为或者逻辑进行图形化的实用方法，但目前仍处于发展阶段。<br>   虽然UML工具能够提供帮助，但是建议考虑使用UML的<em>敏捷建模方法（agile modeling）强调作为草图的方式，时间投入高回报。<br>*</em>迭代开发和进化式开发**<br>   迭代开发(iterative development)是OOA/D实践的核心，开发被组织成一系列固定的短期小项目，称为<strong>迭代</strong>，每次迭代都有各自我的需求分析、设计实现和测试活动。随着每一次的迭代，系统增量式地发展完善所以也叫作迭代和增量式开发。<br>    优点：失败可能性低生产率高 早期可见的发展 可控复杂性 系统更加贴近需求。<br><strong>瀑布(waterfall)生命周期</strong><br>    它试图在编程之前就详细定义所有或大部分的需求，而且与编程之前就创建出完整的设计，然而常常事与愿违 高失败率、低生产率和高缺陷率。<br><strong>敏捷方法和观点</strong><br>    <em>敏捷开发(agile development)</em>不好定义敏捷方法，用于时间定量的迭代和进化式方法，提倡敏捷式的价值和实践。<br>    有个敏捷方法叫<em>敏捷建模(agile modeling)</em>包含以下实践和价值：<br>    1.采用敏捷方法并不意味着不进行任何建模。一般都包含重要的建模期。<br>    2.建模和模型的目的主要用于理解和沟通而不是构建文档。<br>    3.不要对所有或大多数软件设计建模或应用UML。简单的问题推延到编程阶段，只有复杂不常见的问题才用UML。<br>    4.尽可能使用最简单的工具。<br><strong>up的阶段</strong><br>    1.初始(Inception)：大体上的构想。<br>    2.细化(Elaboration)：已精化的构想、核心框架的迭代实现、高风险的解决等。<br>    3.构造(Construction)：对遗留下来的风险低的和简单的元素进行构造，准备部署。<br>    4.移交(Transition)：进行beta测试和部署。<br><strong>up科目</strong><br>    科目(discipline)是在一个主体域中的一组活动，例如需求分析中的活动。尽管一个迭代包括大部分科目的工作但是工作重点会随时间变化。<em>实现</em>表示编程和构建系统而不是部署，<em>环境</em>科目指建立工具和过程环境。</p>
 </blockquote>
-<p>##应用UML的三种方式<br>   1.作为草图(sketch) 非正式不完整 探讨复杂问题。<br>   2.作为蓝图(blueprint) 详细的设计图 一般情况下，使用一些代码生成工具使用图来生成一些代码然后开发者手动编写填充其他代码。<br>   3.作为编程语言(programming language) 用UML完成软件系统可执行规格说明。可执行代码能够被自动生成但是不相同处一样能够被开发者看到或是修改：人们警用UML进行工作。这样使用UML需要将所有行为或者逻辑进行图形化的实用方法，但目前仍处于发展阶段。</p>
 
       
     </div><!-- .entry-content -->
